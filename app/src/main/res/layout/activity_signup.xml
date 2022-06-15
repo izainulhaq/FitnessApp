@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignupActivity">
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="500dp"
+        android:background="@drawable/curvedbg"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="500dp"
+        android:src="@drawable/logo_icon"
+        android:layout_gravity="center_horizontal"/>
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_marginTop="340dp"
+       android:layout_marginHorizontal="10dp">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical"
+           android:background="@drawable/round_corner_bg">
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="SignUp"
+               android:textSize="32sp"
+               android:textStyle="bold"
+               android:textColor="@color/black"
+               android:gravity="center"/>
+
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Please enter your credentials to process"
+               android:textSize="14sp"
+               android:gravity="center"
+               />
+
+           <FrameLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:layout_marginTop="5dp">
+
+               <de.hdodenhof.circleimageview.CircleImageView
+                   android:layout_width="100dp"
+                   android:layout_height="100dp"
+                   android:src="@drawable/background_image"
+                   android:layout_gravity="center"
+                   app:civ_border_color="@color/black"
+                   app:civ_border_width="1dp"/>
+
+               <de.hdodenhof.circleimageview.CircleImageView
+                   android:layout_width="30dp"
+                   android:layout_height="30dp"
+                  android:layout_marginLeft="70dp"
+                   android:layout_marginTop="90dp"
+                   android:src="@drawable/edit_icon" />
+
+           </FrameLayout>
+
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="Name"
+               android:padding="8dp"
+               android:textSize="20sp"
+               android:layout_marginTop="5dp"
+               android:layout_marginHorizontal="10dp"
+               android:background="@drawable/edittext_bg"/>
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="User/Coach"
+               android:padding="8dp"
+               android:textSize="20sp"
+               android:layout_marginTop="10dp"
+               android:layout_marginHorizontal="10dp"
+               android:background="@drawable/edittext_bg"/>
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="Age"
+               android:inputType="number"
+               android:padding="8dp"
+               android:textSize="20sp"
+               android:layout_marginTop="10dp"
+               android:layout_marginHorizontal="10dp"
+               android:background="@drawable/edittext_bg"/>
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="Country"
+               android:padding="8dp"
+               android:textSize="20sp"
+               android:layout_marginTop="10dp"
+               android:layout_marginHorizontal="10dp"
+               android:background="@drawable/edittext_bg"/>
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="Phone Number"
+               android:inputType="phone"
+               android:padding="8dp"
+               android:textSize="20sp"
+               android:layout_marginTop="10dp"
+               android:layout_marginHorizontal="10dp"
+               android:background="@drawable/edittext_bg"/>
+
+           <EditText
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:hint="Address (For courier deliveries) Not to be publicly shared"
+               android:padding="8dp"
+               android:textSize="20sp"
+               android:layout_marginTop="10dp"
+               android:layout_marginHorizontal="10dp"
+               android:background="@drawable/edittext_bg"/>
+
+           <Button
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="Sign Up"
+               android:textColor="@color/white"
+               android:layout_marginTop="10dp"
+               android:layout_marginHorizontal="10dp"/>
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:orientation="horizontal"
+               android:layout_marginTop="14sp"
+               android:weightSum="8">
+
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:background="#453C3C"
+                   android:layout_gravity="center_vertical"
+                   android:layout_weight="3"
+                   />
+
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="or connect using"
+                   android:textAllCaps="true"
+                   android:textSize="14sp"
+                   android:gravity="center"
+                   android:textColor="@color/black"
+                   android:textStyle="bold"
+                   android:layout_marginHorizontal="10sp"
+                   android:layout_weight="2"/>
+
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="1dp"
+                   android:background="#453C3C"
+                   android:layout_gravity="center_vertical"
+                   android:layout_weight="3"
+                   />
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_weight="8"
+               android:layout_marginTop="14sp"
+               android:gravity="center">
+
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/ic_facebook"
+                   android:layout_margin="10sp"
+
+                   android:layout_weight="4"/>
+
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/ic_twitter"
+                   android:layout_margin="10sp"
+                   android:layout_weight="4"/>
+
+           </LinearLayout>
+
+       </LinearLayout>
+
+   </ScrollView>
+
+</FrameLayout>
