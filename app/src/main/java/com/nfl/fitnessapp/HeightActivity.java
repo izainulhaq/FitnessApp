@@ -7,21 +7,21 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class SignupActivity extends AppCompatActivity {
+public class HeightActivity extends AppCompatActivity {
 
-    Button signup;
+    Button height_btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_signup);
+        setContentView(R.layout.activity_height);
 
-        signup = findViewById(R.id.signUpbtn);
+        height_btn = findViewById(R.id.height_next);
 
-        signup.setOnClickListener(new View.OnClickListener() {
+        height_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(SignupActivity.this,GoalActivity.class);
+                Intent intent = new Intent(HeightActivity.this,GenderActivity.class);
                 startActivity(intent);
             }
         });
