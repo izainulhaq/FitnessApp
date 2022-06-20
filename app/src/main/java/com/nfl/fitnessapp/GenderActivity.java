@@ -36,15 +36,12 @@ public class GenderActivity extends AppCompatActivity implements View.OnClickLis
         switch (view.getId()){
 
             case R.id.malebtn:
-                funIntent();
-                break;
 
             case R.id.femalebtn:
-                funIntent();
-                break;
 
             case R.id.otherbtn:
                 funIntent();
+                break;
         }
     }
 }
